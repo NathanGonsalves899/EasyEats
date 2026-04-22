@@ -1,0 +1,113 @@
+.saved-page {
+  padding: 0 0 calc(var(--nav-height) + 24px);
+  min-height: 100vh;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.saved-header {
+  padding: 52px 20px 20px;
+  background: linear-gradient(160deg, #FFF5F0 0%, #ffffff 100%);
+}
+
+.saved-header h1 { margin-bottom: 4px; }
+.saved-header p  { font-size: 14px; color: var(--gray); }
+
+/* ── Empty state ─────────────────────────────────────────────────────────── */
+.saved-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 32px;
+  gap: 12px;
+}
+
+.saved-empty-icon {
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.saved-empty h3 {
+  font-size: 20px;
+  color: var(--dark);
+}
+
+.saved-empty p {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+/* ── Saved list ──────────────────────────────────────────────────────────── */
+.saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 20px;
+}
+
+/* ── Saved card ──────────────────────────────────────────────────────────── */
+.saved-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--gray-border);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
+  animation: fadeUp 0.3s ease forwards;
+}
+
+.saved-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.saved-name {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.saved-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.delete-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: var(--gray-light);
+  color: var(--gray);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.delete-btn:hover {
+  background: var(--red-pale);
+  color: var(--red);
+}
+
+.saved-reasoning {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.saved-tags {
+  display: flex;
+  gap: 6px;
+}
